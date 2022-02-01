@@ -18,7 +18,9 @@ export interface ListCatalogItemsResponse extends BaseResponse {
 }
 
 export interface GetCatalogItemQuery {
-  MarketplaceId: string;
+  MarketplaceId?: string;
+  marketplaceIds: string[];
+  includedData: string;
 }
 
 export interface GetCatalogItemPath {
